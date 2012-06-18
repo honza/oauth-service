@@ -1,0 +1,5 @@
+django
+oauth2
+flask
+requests
+requests-oauth
