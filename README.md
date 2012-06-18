@@ -4,7 +4,7 @@ OAuth authentication for service-based web applications
 Background
 ----------
 
-This is inspired by the [Flaky Goodness][1] talk given at DjangoCon EU 2012 by
+This is inspired by the [Flasky Goodness][1] talk given at DjangoCon EU 2012 by
 [Kenneth Reitz][2].  He spoke about splitting your massive monolithic Django
 application into many single-purpose services.  I was quite intrigued about the
 idea and wanted to implement something like that to see how it felt.  The first
