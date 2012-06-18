@@ -41,7 +41,7 @@ Here is a basic flow:
 * The data service knows which clients it will accept requests from.  Each
   service that will connect to the data service will have its own set of
   consumer key and secret.  See the `settings.py` file in the data service.
-  You can easily decommission a service (if the gets compromised, etc).
+  You can easily decommission a service (if the service gets compromised, etc).
 * The two services communicate over HTTP via JSON messages.
 * The Django application contains an `oauth_required` view decorator.
 
