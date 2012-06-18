@@ -27,7 +27,7 @@ There are two services:
     * Flask
     * Session
     * HTML rendering (public facing interface)
-    * Log in form
+    * Login form
 
 Here is a basic flow:
 
