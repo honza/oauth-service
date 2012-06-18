@@ -16,3 +16,12 @@ class User(models.Model):
 
     def __unicode__(self):
         return self.username
+
+
+class UserProfile(models.Model):
+    user = models.OneToOneField(User)
+    favorite_color = models.CharField(max_length=20,
+            help_text="English or hex")
+
+    def __unicode__(self):
+        return "User Profile for %s" % self.user.username

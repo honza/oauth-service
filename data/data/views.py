@@ -9,7 +9,7 @@ from models import User
 @jsonify
 def index(request, user):
     return {
-        'greeting': 'bonjour'
+        'favorite_color': user.userprofile.favorite_color
     }
 
 

@@ -1,5 +1,5 @@
 from flask import Flask, request, session, redirect, url_for
-from api import get_greeting, authenticate
+from api import get_color, authenticate
 
 
 app = Flask(__name__)
@@ -16,12 +16,26 @@ def index():
         'access_token_secret': session.get('secret')
     }
 
-    data = get_greeting(user)
+    data = get_color(user)
 
     if not data:
         return ('Forbidden', 403)
 
-    return "Your greeting: %s" % data['greeting']
+    return """
+    <html>
+    <head>
+    <style>
+        body {
+            background: %s;
+        }
+    </style>
+    </head>
+    <body>
+    <h1>Hello there</h1>
+    <p>Your favorite color is %s.  We've also colored the background as such.</p>
+    </body>
+    </html>
+    """ % (data['favorite_color'], data['favorite_color'])
 
 
 @app.route('/login', methods=['GET', 'POST'])

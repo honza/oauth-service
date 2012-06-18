@@ -38,5 +38,5 @@ def authenticate(username, password):
 # API methods ----------------------------------------------------------------
 
 
-def get_greeting(user):
+def get_color(user):
     return make_request(user, "/")
