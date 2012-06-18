@@ -65,6 +65,14 @@ Front end service:
 
 View the front-end at http://localhost:4444.
 
+Disclaimer
+----------
+
+Please note that this was written as a proof-of-concept.  Use it as an example
+of how you might write something like this.  It would probably work fine in
+production but I would carefully consider all the security-related concerns
+before continuing.
+
 License
 -------
 
