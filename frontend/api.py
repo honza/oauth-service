@@ -1,10 +1,14 @@
+import os
 import json
 import requests
 from oauth_hook import OAuthHook
 
-FRONTEND_KEY = '12b1bd1876bfe6c2cccd84a4fe2a8bc82159ec13'
-FRONTEND_SECRET = 'c4e0573cb3f2539a381b771033bfc866d4239011'
+FRONTEND_KEY = os.environ.get('FRONTEND_KEY', None)
+FRONTEND_SECRET = os.environ.get('FRONTEND_SECRET', None)
 DATA_HOST = "http://127.0.0.1:8000"
+
+
+assert FRONTEND_KEY and FRONTEND_SECRET
 
 
 def make_request(user, url):

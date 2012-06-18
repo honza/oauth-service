@@ -1,3 +1,5 @@
+import os
+
 # Django settings for data project.
 
 DEBUG = True
@@ -145,12 +147,21 @@ LOGGING = {
             'propagate': True,
         },
     }
+
 }
 
+
+FRONTEND_KEY = os.environ.get('FRONTEND_KEY', None)
+FRONTEND_SECRET = os.environ.get('FRONTEND_SECRET', None)
+
+
+assert FRONTEND_KEY and FRONTEND_SECRET
+
+
 CONSUMERS = {
-    '12b1bd1876bfe6c2cccd84a4fe2a8bc82159ec13': {
+    FRONTEND_KEY: {
         'name': 'Front end',
         'active': True,
-        'secret': 'c4e0573cb3f2539a381b771033bfc866d4239011'
+        'secret': FRONTEND_SECRET
     }
 }

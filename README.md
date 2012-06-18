@@ -49,6 +49,7 @@ Installation
 ------------
 
     $ pip install -r requirements.txt
+    $ source env.sh  # This will export some OAuth credentials
 
 Data service:
 
