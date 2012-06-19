@@ -33,6 +33,7 @@ def index():
     <body>
     <h1>Hello there</h1>
     <p>Your favorite color is %s.  We've also colored the background as such.</p>
+    <p><a href="/logout">Logout</a></p>
     </body>
     </html>
     """ % (data['favorite_color'], data['favorite_color'])
@@ -53,6 +54,7 @@ def login():
             <p>Password: <input type="password" name="password"></p>
             <p><input type="submit" value="Login"></p>
         </form>
+        <p><a href="/logout">Logout</a></p>
     """
 
 
