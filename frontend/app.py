@@ -3,7 +3,7 @@ from api import get_color, authenticate
 
 
 app = Flask(__name__)
-app.secret_key = 'jldfkjs'
+app.secret_key = "2@-s4=@i!7xnc(ee8#x4!$$k^evqin19ehszf14178&_!$gq5k"
 
 
 @app.route('/')
