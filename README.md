@@ -74,6 +74,12 @@ of how you might write something like this.  It would probably work fine in
 production but I would carefully consider all the security-related concerns
 before continuing.
 
+Contributing
+------------
+
+All ideas and contributions are welcome.  It would be particularly awesome if
+you wanted to contribute a service in a language other than Python.
+
 License
 -------
 
